@@ -10,20 +10,26 @@ In the mllab.py script, add your AWS ID and AWS keys.
 ### Manually create the S3 bucket named: mllab-l1-terraform-aws-id (replace aws_id with your AWS ID)
 
 ### adjust replacing aws_id with your AWS ID and access keys
-** terraform.tfvars **
+* terraform.tfvars
+```
 name_bucket       = "mllab-l1-aws-id"
 name_emr          = "mllab-l1-emr-aws-id"
+```
 
-** config.tf **
+* config.tf 
+```
 bucket  = "mllab-l1-terraform-aws-id"
+```
 
-** mllab.py **
-# Bucket Name
-# BUCKET_NAME = "mllab-l1-aws-id"
+* mllab.py 
+```
+Bucket Name
+BUCKET_NAME = "mllab-l1-aws-id"
 
-# AWS access keys
+AWS access keys
 AWSACCESSKEYID = "put-your-aws-key-here"
 AWSSECRETKEY = "put-your-aws-secret-key-here"
+```
 
 ### RUN:
 ````
